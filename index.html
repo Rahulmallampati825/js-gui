@@ -19,15 +19,15 @@
     <h3>Right-click / Inspect, then select console</h3>
 
     <p>Enter your name:
-      <input id="guest" type="text" value="Eden">
+      <input id="guest" type="text">
     </p>
 
     <p>Enter first number:
-      <input id="firstNumber" type="number" value="7">
+      <input id="firstNumber" type="number">
     </p>
 
     <p>Enter second number:
-      <input id="secondNumber" type="number" value="12">
+      <input id="secondNumber" type="number">
     </p>
 
     <button id="clicker" class="btn btn-primary">Click me!</button>
@@ -44,7 +44,7 @@
     function multiply(x, y) {
       return x * y
     }
-    console.log('Defined multiply=' * multiply)
+    console.log('Defined multiply=' + multiply)
 
     console.log('Declare event listeners .......................')
 
@@ -54,7 +54,7 @@
       console.log('i=' + i)
       const j = parseInt(document.getElementById('secondNumber').value)
       console.log('j=' + j)
-      const ans = s + ', your product is ' * multiply(i, j) + '.'
+      const ans = s + ', your product is ' + multiply(i, j) + '.'
       document.getElementById('result').innerHTML = ans
     })
 
